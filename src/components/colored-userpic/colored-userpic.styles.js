@@ -7,12 +7,12 @@ export const GradientCircle = styled.div`
   width: ${({ size }) => size || 100}px;
   height: ${({ size }) => size || 100}px;
   overflow: hidden;
-  background: ${({ colors }) => `linear-gradient(to right, ${colors[0]}, ${colors[1]})`};
+  background: ${({ colors }) => `linear-gradient(to right, ${colors.join(", ")})`};
   padding: ${({ colorWidth }) => colorWidth || 2}px;
   border-radius: 50%;
 
   &:hover {
-    background: ${({ hoverColors }) => `linear-gradient(to right, ${hoverColors[0]}, ${hoverColors[1]})`};
+    background: ${({ hoverColors }) => `linear-gradient(to right, ${hoverColors.join(", ")})`};
   }
 `
 
