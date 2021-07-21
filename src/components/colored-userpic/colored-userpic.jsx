@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledImgWrapper, StyledGradientCircle, StyledImg } from "./colored-userpic.styles";
+import * as Styled from "./colored-userpic.styles";
 
 const ColoredUserpic = (props) => {
   const {
@@ -13,11 +13,11 @@ const ColoredUserpic = (props) => {
   } = props;
 
   return (
-    <StyledGradientCircle size={size} colorWidth={colorWidth} colors={colors} hoverColors={hoverColors}>
-      <StyledImgWrapper margin={margin} backgroundColor={backgroundColor}>
-        <StyledImg src={src} alt="your image"/>
-      </StyledImgWrapper>
-    </StyledGradientCircle>
+    <Styled.GradientCircle size={size} colorWidth={colorWidth} colors={colors} hoverColors={hoverColors}>
+      <Styled.ImgWrapper margin={margin} backgroundColor={backgroundColor}>
+        <Styled.Img src={src} alt="your image"/>
+      </Styled.ImgWrapper>
+    </Styled.GradientCircle>
     )
 }
 

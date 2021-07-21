@@ -1,10 +1,10 @@
 import React from "react";
 import ColoredUserpic from "../colored-userpic/colored-userpic";
-import { StyledContainer } from "./app.styles";
+import { Container } from "./app.styles";
 
 const App = () => {
   return (
-    <StyledContainer>
+    <Container>
       <ColoredUserpic
         src="https://via.placeholder.com/300x300/000000/FFFFFF?text=image"
         size={150}
@@ -14,7 +14,7 @@ const App = () => {
         hoverColors={['blue', 'green']}
         colorWidth={6}
  />
-    </StyledContainer>
+    </Container>
   );
 }
 

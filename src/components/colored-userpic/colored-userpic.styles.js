@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledGradientCircle = styled.div`
+export const GradientCircle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ export const StyledGradientCircle = styled.div`
   }
 `
 
-export const StyledImgWrapper = styled.div`
+export const ImgWrapper = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -25,7 +25,7 @@ export const StyledImgWrapper = styled.div`
   overflow: hidden;
 `
 
-export const StyledImg = styled.img`
+export const Img = styled.img`
   width:100%;
   border-radius: 50%;
 `
